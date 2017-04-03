@@ -1,0 +1,35 @@
+﻿@model IList<CityMizzueMVC.Models.Men>
+@{
+    ViewBag.Title = "DisplayShoes";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DisplayShoes</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-3">
+                @foreach (var shoes in Model)
+                {
+                    <div style="display: inline">
+                        <div class="img">
+                            <a target="_blank" href="@shoes.address">
+                                <img src="@shoes.pictureLocation" alt="@shoes.alt" width="70%" height="70%">
+                            </a>
+                            <div class="desc">
+                                @shoes.desc<b>@shoes.discount</b> @shoes.AfterDiscount was
+                                <p id="edit-overline">@shoes.originalPrice</p>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

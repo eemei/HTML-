@@ -1,0 +1,26 @@
+﻿@model IList<CityMizzueMVC.Models.Teams>
+
+
+@{
+    ViewBag.Title = "Display";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display</title>
+</head>
+<body>
+    <div>
+        @foreach
+    (var user in
+    Model)
+        {
+            <li>Name:-    @user.UserName</li>
+            <li>Surname:- @user.Age</li> <br />
+        }
+
+    </div>
+</body>
+</html>
+

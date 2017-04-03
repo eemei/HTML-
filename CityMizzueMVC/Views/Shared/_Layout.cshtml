@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/themes/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <link rel="icon"
+          type="image/png"
+          href="~/Content/Images/shoe_orange.jpg">
+</head>
+<body>
+<div class="container">
+    <div class="container">
+    <div class="row">
+        <header>
+            <a href="/Home/"><img class="logo" src="/Content/Images/shoe_orange.jpg" alt="logo" width="100" height="90"></a>
+            <p style="text-align: center">City Mizzue</p>
+        </header>
+    </div>
+    </div>
+
+    <section>
+        <div class="container">
+        <div class="row">
+            <div class="form-group">
+                <label for="username">Username/Email</label>
+                <input type="text"  id="username" placeholder="Your usernames"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password"  placeholder="Your password"/>
+            </div>
+        </div>
+
+       
+            <div class="col-md-1" style="margin: auto; padding: 2px;">
+                <button class="btn btn-danger btn-sm ">login</button>
+            </div>
+            <div>
+                <button class="btn btn-danger btn-sm">Cancel</button>
+          
+        </div> <!--end row-->
+        </div> <!--end container -->
+    </section>
+
+
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/MenShoes/DispalyShoes/">Men's Shoes</a></li>
+                        <li><a href="/WomenShoes/DisplayShoes/">Women's Shoes</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    @RenderBody()
+    <footer>
+        <div class="container">
+            <div class="row">
+                <p class="normal">contact us</p>
+                <p class="italic">phone number: <a href="tel:+6014-1234567">+6014-1234567</a>.
+                </p>
+                <p class="italic">Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.
+                </p>
+                <p class="italic">location:</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127498.97169650806!2d101.55778008461047!3d3.0020702454757022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb4858700458b%3A0x450f0f6588f66ff!2sPuchong%2C+Selangor!5e0!3m2!1sen!2smy!4v1487582811185" \
+                        width="400" height="300" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            <p>&copy; Copyright <a href="#">Your Site</a> &#124; <a href="#">Terms of Use</a> &#124; <a href="#">Privacy Policy</a>
+                            </p>
+                        </div> <!--end row-->
+                    </div> <!-- end col-xs-12 col-sm-6 col-md-6 col-lg-6 -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
